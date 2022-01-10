@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/IFL_MRP_ONL_0001" xmlns:tns="http://www.example.org/IFL_MRP_ONL_0001" elementFormDefault="qualified">
+	<element name="element">
+		<complexType>
+			<sequence>
+				<element name="REQUEST" minOccurs="1" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="BRAND" type="string" minOccurs="1" maxOccurs="1" nillable="false"></element>
+							<element name="SEASON" type="string" minOccurs="1" maxOccurs="1" nillable="false"></element>
+							<element name="PARTCODE" type="string" minOccurs="1" maxOccurs="1" nillable="false"></element>
+							<element name="COLOR" type="string" minOccurs="0" maxOccurs="1" nillable="true"></element>
+							<element name="SIZ" type="string" minOccurs="0" maxOccurs="1" nillable="true"></element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/EAI_RestTarget_MRP/Service Descriptors/com.fnf.eai.common.any.rest.COM_MRP_ONL-COM_MRP_ONL.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://xmlns.example.com/COM_MRP_ONL/parameters"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_RestTarget_MRP/Service Descriptors/com.fnf.eai.common.any.rest.IFL_COM_ONL-IFL_COM_ONL.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://xmlns.example.com/IFL_COM_ONL/parameters"
+    }
+]}

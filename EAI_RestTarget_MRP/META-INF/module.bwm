@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_4-rfkC_LEeyxg_Y_VBML8A" targetNamespace="http://tns.tibco.com/bw/composite/EAI_RestTarget_MRP" name="EAI_RestTarget_MRP" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_ZQlIMkztEeyFztOQUSvIXA" name="mrp-healthcheck" promote="Componenthealthcheck/mrp-healthcheck">
+    <sca:interface.wsdl xmi:id="_ZQlINkztEeyFztOQUSvIXA" interface="http://xmlns.example.com/20211124151142PLT#wsdl.interface(mrp-healthcheck)" scaext:wsdlLocation="../Processes/com/fnf/eai/common/healthcheck.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_ZQ3cEEztEeyFztOQUSvIXA" name="RestService" path="/mrp/healthcheck" docBasePath="http://localhost:7777/EAI_RestTarget_MRP" docResourcePath="healthcheck" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.common.healthcheck-healthcheck.json">
+      <operation xmi:id="_ZRLlIEztEeyFztOQUSvIXA" operationName="post" nickname="post-mrp-healthcheck" httpMethod="POST" notes="postHealthcheck" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_ZRLlIUztEeyFztOQUSvIXA" operationName="get" nickname="get-mrp-healthcheck" httpMethod="GET" notes="getHealthcheck" responseStyle="element" outputPartName="item">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_ZROocEztEeyFztOQUSvIXA"/>
+      <advancedConfig xmi:id="_ZQ3cEUztEeyFztOQUSvIXA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_ZRLlIkztEeyFztOQUSvIXA" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_MYoI4kzuEeyFztOQUSvIXA" name="mrp" promote="ComponentCOM_MRP_ONL/mrp">
+    <sca:interface.wsdl xmi:id="_MYoI5kzuEeyFztOQUSvIXA" interface="http://xmlns.example.com/20211124151725PLT#wsdl.interface(mrp)" scaext:wsdlLocation="../Processes/com/fnf/eai/common/any/rest/COM_MRP_ONL.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_MYx54EzuEeyFztOQUSvIXA" name="RestService1" path="/mrp/{resource_path}" docBasePath="http://localhost:7777/EAI_RestTarget_MRP" docResourcePath="COM_MRP_ONL" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.common.any.rest.COM_MRP_ONL-COM_MRP_ONL.json">
+      <operation xmi:id="_MY7q4EzuEeyFztOQUSvIXA" operationName="post" nickname="post-mrp" httpMethod="POST" notes="postCOM_MRP_ONL" responseStyle="element" outputPartName="item">
+        <responseStatus xmi:id="_qzS7kEzuEeyFztOQUSvIXA" statusCode="600" reasonPhrase="EAI System Error" dataType="string"/>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_MY8R8EzuEeyFztOQUSvIXA">
+        <parameterMapping xmi:id="_MY8R8UzuEeyFztOQUSvIXA" parameterName="resource_path" parameterType="Path" required="true"/>
+      </parameters>
+      <advancedConfig xmi:id="_MYx54UzuEeyFztOQUSvIXA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_MY7q4UzuEeyFztOQUSvIXA" bindingName="RestService1"/>
+  </sca:service>
+  <sca:property xmi:id="_5CaJAC_LEeyxg_Y_VBML8A" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5Cj6AC_LEeyxg_Y_VBML8A" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5CuSEC_LEeyxg_Y_VBML8A" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5C4DEC_LEeyxg_Y_VBML8A" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5C7GYC_LEeyxg_Y_VBML8A" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5DEQUC_LEeyxg_Y_VBML8A" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5DEQUS_LEeyxg_Y_VBML8A" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5DOBUC_LEeyxg_Y_VBML8A" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5DXLQC_LEeyxg_Y_VBML8A" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_acwkUDFKEeyOsf5S8eup9Q" name="JDBCConnection_MRP" type="jdbc:JdbcDataSource" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_ZQawIEztEeyFztOQUSvIXA" name="Componenthealthcheck" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ZQawIUztEeyFztOQUSvIXA" processName="com.fnf.eai.common.healthcheck"/>
+    <sca:service xmi:id="_ZQlIMEztEeyFztOQUSvIXA" name="mrp-healthcheck">
+      <sca:interface.wsdl xmi:id="_ZQlIMUztEeyFztOQUSvIXA" interface="http://xmlns.example.com/20211124151142PLT#wsdl.interface(mrp-healthcheck)" scaext:wsdlLocation="../Processes/com/fnf/eai/common/healthcheck.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_MYnh0EzuEeyFztOQUSvIXA" name="ComponentCOM_MRP_ONL" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_MYnh0UzuEeyFztOQUSvIXA" processName="com.fnf.eai.common.any.rest.COM_MRP_ONL"/>
+    <sca:service xmi:id="_MYoI4EzuEeyFztOQUSvIXA" name="mrp">
+      <sca:interface.wsdl xmi:id="_MYoI4UzuEeyFztOQUSvIXA" interface="http://xmlns.example.com/20211124151725PLT#wsdl.interface(mrp)" scaext:wsdlLocation="../Processes/com/fnf/eai/common/any/rest/COM_MRP_ONL.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_i0N4ITFCEeyOsf5S8eup9Q" name="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" type="httpconnector:HttpConnectorConfiguration">
+  <jndi:configuration xsi:type="httpconnector:HttpConnectorConfiguration" xmi:id="_i0N4IjFCEeyOsf5S8eup9Q" acceptQueueSize="-1" newAccessLogs="true">
+    <substitutionBindings xmi:id="_i0N4IzFCEeyOsf5S8eup9Q" template="host" propName="BW.HOST.NAME"/>
+    <substitutionBindings xmi:id="_jxupQDFCEeyOsf5S8eup9Q" template="port" propName="//SharedModuleV2///RESOURCES/EAI/HTTP_SERVER/MRP_PORT"/>
+    <substitutionBindings xmi:id="_5aeroDFIEeyOsf5S8eup9Q" template="minThreads" propName="//SharedModuleV2///RESOURCES/EAI/HTTP_SERVER/QTP_MIN"/>
+    <substitutionBindings xmi:id="__mOcMDFIEeyOsf5S8eup9Q" template="maxThreads" propName="//SharedModuleV2///RESOURCES/EAI/HTTP_SERVER/QTP_MAX"/>
+  </jndi:configuration>
+</jndi:namedResource>

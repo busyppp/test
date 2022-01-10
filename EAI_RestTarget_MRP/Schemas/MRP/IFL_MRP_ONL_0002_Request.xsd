@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/IFL_MRP_ONL_0002_Request" xmlns:tns="http://www.example.org/IFL_MRP_ONL_0002_Request" elementFormDefault="qualified">
+	<element name="element">
+		<complexType>
+			<sequence>
+				<element name="REQUEST" minOccurs="1" maxOccurs="1">
+					<complexType>
+						<sequence>
+							<element name="BRAND" type="string"
+								minOccurs="1" maxOccurs="1" nillable="false">
+							</element>
+							<element name="SEASON" type="string"
+								minOccurs="1" maxOccurs="1" nillable="false">
+							</element>
+							<element name="PARTCODE" type="string"
+								minOccurs="1" maxOccurs="1" nillable="false">
+							</element>
+							<element name="COLOR" type="string"
+								minOccurs="1" maxOccurs="1" nillable="true">
+							</element>
+							<element name="SIZ" type="string"
+								minOccurs="1" maxOccurs="1" nillable="true">
+							</element>
+							<element name="REF_NO" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="REF_DETL_NO" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="SHIPTO_ZIP" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="SHIPTO_ADDR_1"
+								type="string" minOccurs="1" maxOccurs="1">
+							</element>
+							<element name="SHIPTO_ADDR_2"
+								type="string" minOccurs="1" maxOccurs="1">
+							</element>
+							<element name="SHIPTO_TEL_NO" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="CUST_ID" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="CUST_NM" type="string" minOccurs="1"></element>
+							<element name="PAYMENT_AMT" type="int" minOccurs="1" maxOccurs="1"></element>
+							<element name="SALE_PRICE" type="int" minOccurs="1" maxOccurs="1"></element>
+							<element name="OUTB_ECT_QTY"
+								type="int" minOccurs="1" maxOccurs="1">
+							</element>
+							<element name="RMK" type="string" minOccurs="0" maxOccurs="1" nillable="true"></element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
