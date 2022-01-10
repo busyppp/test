@@ -1,0 +1,29 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": [
+        {
+            "location": "Service Descriptors/com.fnf.eai.rest.to.any.SOURCE_TARGET_ONL-SOURCE_TARGET_ONL.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/com.fnf.eai.rest.to.any.SOURCE_TARGET_ONL1-SOURCE_TARGET_ONL.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/com.fnf.eai.rest.to.any.SOURCE_TARGET_ONL_-SOURCE_TARGET_ONL_.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/com.fnf.eai.rest.to.any.SOURCE_TARGET_ONL1-Resource.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/com.fnf.eai.rest.to.any.Resource-Resource.json",
+            "type": "generated"
+        }
+    ]
+}

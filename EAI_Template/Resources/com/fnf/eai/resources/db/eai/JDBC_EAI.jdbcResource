@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_q1vUEVTDEeulPID_NHzCZg" name="com.fnf.eai.resources.db.eai.JDBC_EAI" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_q2s9YFTDEeulPID_NHzCZg" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_q2s9YVTDEeulPID_NHzCZg">
+    <substitutionBindings xmi:id="_GQ3o0PT8Eeu3KfTx1us18g" template="username" propName="/EAI_INFO/DB/username"/>
+    <substitutionBindings xmi:id="_Hxxa4PT8Eeu3KfTx1us18g" template="password" propName="/EAI_INFO/DB/password"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_q2s9YlTDEeulPID_NHzCZg" jdbcDriver="tibcosoftwareinc.jdbc.postgresql.PostgreSQLDriver">
+      <substitutionBindings xmi:id="_vAofsGnWEeujoM_fZ1RBmA" template="dbURL" propName="/EAI_INFO/DB/url"/>
+    </connectionConfig>
+  </jndi:configuration>
+</jndi:namedResource>

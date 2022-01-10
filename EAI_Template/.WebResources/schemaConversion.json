@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/EAI_Template/Service Descriptors/com.fnf.eai.rest.to.any.SOURCE_TARGET_ONL-SOURCE_TARGET_ONL.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://xmlns.example.com/SOURCE_TARGET_ONL/parameters"
+    },
+    {
+        "jsonSchemaLocation": "/EAI_Template/Service Descriptors/com.fnf.eai.rest.to.any.Resource-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://xmlns.example.com/Resource/parameters"
+    }
+]}
