@@ -1031,7 +1031,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.8"/>
                                     <layoutConstraint
                                     height="196"
-                                    width="352"
+                                    width="415"
                                     x="15"
                                     xsi:type="notation:Bounds" y="20"/>
                                     </children>
@@ -1122,7 +1122,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.8"/>
                                     <layoutConstraint
-                                    height="240" width="392"
+                                    height="240" width="455"
                                     x="553"
                                     xsi:type="notation:Bounds" y="57"/>
                                     </children>
@@ -1491,7 +1491,7 @@
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0"
             target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2" type="4006">
             <children type="6002">
-                <layoutConstraint x="8" xsi:type="notation:Location" y="-5"/>
+                <layoutConstraint x="24" xsi:type="notation:Location" y="-31"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
