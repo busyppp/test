@@ -898,7 +898,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.8"/>
-                                    <layoutConstraint x="1089"
+                                    <layoutConstraint x="1132"
                                     xsi:type="notation:Bounds" y="92"/>
                                     </children>
                                     <children type="4002 bw.jdbc.update">
