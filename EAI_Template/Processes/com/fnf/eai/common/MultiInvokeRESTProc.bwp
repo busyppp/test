@@ -25,69 +25,6 @@
     xmlns:tib="http://www.tibco.com/bw/xslt/custom-functions"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <tibex:VariableDescriptor type="MemorySaving">
-        <task name="InvokeRESTAPI_OBO">
-            <endingVariables>
-                <variable>InvokeRESTAPI_OBO-input</variable>
-                <variable>Authorization_OBO</variable>
-                <variable>Password_OBO</variable>
-            </endingVariables>
-        </task>
-        <task name="LOG_START">
-            <endingVariables>
-                <variable>LOG_START-input</variable>
-            </endingVariables>
-        </task>
-        <task name="LOG_INVOKE">
-            <endingVariables>
-                <variable>LOG_INVOKE-input</variable>
-            </endingVariables>
-        </task>
-        <task name="InvokeRESTAPI_HERO">
-            <endingVariables>
-                <variable>InvokeRESTAPI_HERO-input</variable>
-                <variable>Authorization_HERO</variable>
-                <variable>Password_HERO</variable>
-            </endingVariables>
-        </task>
-        <task name="LOG_END">
-            <endingVariables>
-                <variable>LOG_END-input</variable>
-                <variable>loglevel</variable>
-                <variable>Start</variable>
-            </endingVariables>
-        </task>
-        <task name="InvokeRESTAPI_O3PL">
-            <endingVariables>
-                <variable>InvokeRESTAPI_O3PL-input</variable>
-                <variable>Authorization_O3PL</variable>
-                <variable>Password_O3PL</variable>
-            </endingVariables>
-        </task>
-        <task name="ResultSet">
-            <endingVariables>
-                <variable>InvokeRESTAPI_OBO</variable>
-                <variable>InvokeRESTAPI_HERO</variable>
-                <variable>InvokeRESTAPI_O3PL</variable>
-                <variable>InvokeRESTAPI_SAP</variable>
-                <variable>InvokeRESTAPI_ITER</variable>
-            </endingVariables>
-        </task>
-        <task name="InvokeRESTAPI_SAP">
-            <endingVariables>
-                <variable>InvokeRESTAPI_SAP-input</variable>
-                <variable>Authorization_SAP</variable>
-                <variable>Password_SAP</variable>
-            </endingVariables>
-        </task>
-        <task name="InvokeRESTAPI_ITER">
-            <endingVariables>
-                <variable>InvokeRESTAPI_ITER-input</variable>
-                <variable>Authorization_ITER</variable>
-                <variable>Password_ITER</variable>
-            </endingVariables>
-        </task>
-    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
@@ -1248,7 +1185,7 @@
                                     x="98"
                                     xsi:type="notation:Bounds" y="157"/>
                                     </children>
-                                    <children type="4002">
+                                    <children type="4002 bw.restjson.Rest">
                                     <children type="4017">
                                     <styles fontName="맑은 고딕"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
@@ -1276,8 +1213,10 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.5"/>
-                                    <layoutConstraint x="536"
-                                    xsi:type="notation:Bounds" y="157"/>
+                                    <layoutConstraint
+                                    height="40" width="40"
+                                    x="335"
+                                    xsi:type="notation:Bounds" y="63"/>
                                     </children>
                                     <children type="4002 bw.restjson.Rest">
                                     <children type="4017">
@@ -1309,10 +1248,10 @@
                                     <element href="//0/@process/@activity/@activity/@activities.6"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="335"
-                                    xsi:type="notation:Bounds" y="63"/>
+                                    x="336"
+                                    xsi:type="notation:Bounds" y="257"/>
                                     </children>
-                                    <children type="4002 bw.generalactivities.callprocess">
+                                    <children type="4002 bw.restjson.Rest">
                                     <children type="4017">
                                     <styles fontName="맑은 고딕"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
@@ -1340,105 +1279,6 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.7"/>
-                                    <layoutConstraint
-                                    height="40" width="40"
-                                    x="626"
-                                    xsi:type="notation:Bounds" y="157"/>
-                                    </children>
-                                    <children type="4002 bw.restjson.Rest">
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <styles
-                                    backgroundColor="16777215"
-                                    gradientEndColor="50431"
-                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-                                    <element href="//0/@process/@activity/@activity/@activities.8"/>
-                                    <layoutConstraint
-                                    height="40" width="40"
-                                    x="336"
-                                    xsi:type="notation:Bounds" y="257"/>
-                                    </children>
-                                    <children type="4002 bw.generalactivities.bwassign">
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <styles
-                                    backgroundColor="16777215"
-                                    gradientEndColor="50431"
-                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-                                    <element href="//0/@process/@activity/@activity/@activities.9"/>
-                                    <layoutConstraint
-                                    height="40" width="40"
-                                    x="458"
-                                    xsi:type="notation:Bounds" y="157"/>
-                                    </children>
-                                    <children type="4002 bw.restjson.Rest">
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <children type="4017">
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-                                    <styles fontName="맑은 고딕"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-                                    <styles
-                                    backgroundColor="16777215"
-                                    gradientEndColor="50431"
-                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-                                    <element href="//0/@process/@activity/@activity/@activities.10"/>
                                     <layoutConstraint
                                     height="40" width="40"
                                     x="335"
@@ -1471,7 +1311,7 @@
                                     backgroundColor="16777215"
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-                                    <element href="//0/@process/@activity/@activity/@activities.11"/>
+                                    <element href="//0/@process/@activity/@activity/@activities.8"/>
                                     <layoutConstraint
                                     height="40" width="40"
                                     x="337"
@@ -1558,7 +1398,7 @@
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9" type="4006">
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -1569,38 +1409,62 @@
             <targetAnchor id="(0.24390243902439024,0.4666666666666667)" xsi:type="notation:IdentityAnchor"/>
         </edges>
         <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.4"/>
-            <bendpoints points="[25, 0, -49, 0]$[50, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6" type="4006">
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5" type="4006">
             <children type="6002">
                 <layoutConstraint x="43" xsi:type="notation:Location" y="23"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.5"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.4"/>
             <bendpoints
                 points="[25, 0, -105, 94]$[52, 0, -78, 94]$[52, -94, -78, 0]$[106, -94, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9" type="4006">
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.5"/>
             <bendpoints points="[25, 18, -106, -76]$[107, 76, -24, -18]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6" type="4006">
+            <children type="6002">
+                <layoutConstraint x="17" xsi:type="notation:Location" y="-23"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
+            <bendpoints
+                points="[25, 0, -106, -100]$[50, 0, -81, -100]$[50, 100, -81, 0]$[107, 100, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.6"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
+            <bendpoints points="[25, -19, -105, 81]$[106, -81, -24, 19]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7" type="4006">
+            <children type="6002">
+                <layoutConstraint x="73" xsi:type="notation:Location" y="-18"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.8"/>
+            <bendpoints
+                points="[25, 0, -105, -198]$[51, 0, -79, -198]$[51, 198, -79, 0]$[106, 198, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.7"
@@ -1610,88 +1474,31 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
-            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8" type="4006">
-            <children type="6002">
-                <layoutConstraint x="17" xsi:type="notation:Location" y="-23"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.8"/>
-            <bendpoints
-                points="[25, 0, -106, -100]$[50, 0, -81, -100]$[50, 100, -81, 0]$[107, 100, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@links/@children.9"/>
-            <bendpoints points="[25, -19, -105, 81]$[106, -81, -24, 19]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.5" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.10"/>
-            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.10" type="4006">
-            <children type="6002">
-                <layoutConstraint x="73" xsi:type="notation:Location" y="-18"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.11"/>
-            <bendpoints
-                points="[25, 0, -105, -198]$[51, 0, -79, -198]$[51, 198, -79, 0]$[106, 198, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.10"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.12"/>
             <bendpoints
                 points="[25, 0, -98, 198]$[62, 0, -61, 198]$[62, -198, -61, 0]$[99, -198, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.11" type="4006">
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8" type="4006">
             <children type="6002">
                 <layoutConstraint x="109" xsi:type="notation:Location" y="-21"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.13"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.10"/>
             <bendpoints
                 points="[25, 0, -107, -285]$[50, 0, -82, -285]$[50, 285, -82, 0]$[108, 285, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.11"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9" type="4006">
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.8"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.14"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.11"/>
             <bendpoints
                 points="[25, 0, -96, 285]$[60, 0, -61, 285]$[60, -285, -61, 0]$[97, -285, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
@@ -1739,7 +1546,6 @@
             name="_error_InvokeRESTAPI_OBO" sca-bpel:internal="true"/>
         <bpws:variable element="ns:ErrorReport" name="_error" sca-bpel:internal="true"/>
         <bpws:variable element="ns1:JobTotal" name="LOG_START-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns1:JobTotal" name="LOG_INVOKE-input" sca-bpel:internal="true"/>
         <bpws:variable name="loglevel" sca-bpel:hotUpdate="false"
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
             tibex:propertySource="/COMMON/LOG_LEVEL" type="xsd:string"/>
@@ -1763,7 +1569,6 @@
         <bpws:variable name="Password_HERO" sca-bpel:hotUpdate="false"
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
             tibex:propertySource="/CRM_INFO/HTTP/password" type="xsd:string"/>
-        <bpws:variable element="ns1:JobTotal" name="LOG_END-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns7:RestActivityInput"
             name="InvokeRESTAPI_O3PL-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns8:RestActivityOutput"
@@ -1854,22 +1659,19 @@
                 <bpws:link name="GatewayRESTToInvokeRESTAPI_OBO"
                     tibex:label="OBO" tibex:linkType="SUCCESSWITHCONDITION"/>
                 <bpws:link name="CallProcessToGatewayREST" tibex:linkType="SUCCESS"/>
-                <bpws:link name="InvokeRESTAPI_OBOToAssign" tibex:linkType="SUCCESS"/>
-                <bpws:link name="LOG_INVOKEToEnd" tibex:linkType="SUCCESS"/>
+                <bpws:link name="InvokeRESTAPI_OBOToEnd" tibex:linkType="SUCCESS"/>
                 <bpws:link name="GatewayRESTToInvokeRESTAPI_HERO"
                     tibex:label="HERO" tibex:linkType="SUCCESSWITHCONDITION"/>
-                <bpws:link name="InvokeRESTAPI_HEROToAssign" tibex:linkType="SUCCESS"/>
-                <bpws:link name="CallProcessToEnd" tibex:linkType="SUCCESS"/>
+                <bpws:link name="InvokeRESTAPI_HEROToEnd" tibex:linkType="SUCCESS"/>
                 <bpws:link name="GatewayRESTToInvokeRESTAPI_O3PL"
                     tibex:label="O3PL" tibex:linkType="SUCCESSWITHCONDITION"/>
-                <bpws:link name="InvokeRESTAPI_O3PLToLOG_INVOKE" tibex:linkType="SUCCESS"/>
-                <bpws:link name="AssignToLOG_INVOKE" tibex:linkType="SUCCESS"/>
+                <bpws:link name="InvokeRESTAPI_O3PLToEnd" tibex:linkType="SUCCESS"/>
                 <bpws:link name="GatewayRESTToInvokeRESTAPI_SAP"
                     tibex:label="SAP" tibex:linkType="SUCCESSWITHCONDITION"/>
-                <bpws:link name="InvokeRESTAPI_SAPToResultSet" tibex:linkType="SUCCESS"/>
+                <bpws:link name="InvokeRESTAPI_SAPToEnd" tibex:linkType="SUCCESS"/>
                 <bpws:link name="GatewayRESTToInvokeRESTAPI_ITER"
                     tibex:label="ITER" tibex:linkType="SUCCESSWITHCONDITION"/>
-                <bpws:link name="InvokeRESTAPIToResultSet" tibex:linkType="SUCCESS"/>
+                <bpws:link name="InvokeRESTAPI_ITERToEnd" tibex:linkType="SUCCESS"/>
             </bpws:links>
             <bpws:extensionActivity>
                 <tibex:receiveEvent createInstance="yes"
@@ -1889,7 +1691,11 @@
                     name="End"
                     tibex:xpdlId="5bd45638-1c24-4dbf-b6f3-c6894a8e3c55" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
-                        <bpws:target linkName="CallProcessToEnd"/>
+                        <bpws:target linkName="InvokeRESTAPI_O3PLToEnd"/>
+                        <bpws:target linkName="InvokeRESTAPI_HEROToEnd"/>
+                        <bpws:target linkName="InvokeRESTAPI_OBOToEnd"/>
+                        <bpws:target linkName="InvokeRESTAPI_SAPToEnd"/>
+                        <bpws:target linkName="InvokeRESTAPI_ITERToEnd"/>
                     </bpws:targets>
                     <tibex:inputBindings>
                         <tibex:inputBinding
@@ -1964,7 +1770,7 @@
                         <bpws:target linkName="GatewayRESTToInvokeRESTAPI_OBO"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="InvokeRESTAPI_OBOToAssign"/>
+                        <bpws:source linkName="InvokeRESTAPI_OBOToEnd"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
@@ -2011,25 +1817,6 @@
                 </tibex:extActivity>
             </bpws:extensionActivity>
             <bpws:extensionActivity>
-                <tibex:extActivity inputVariable="LOG_INVOKE-input"
-                    name="LOG_INVOKE"
-                    tibex:xpdlId="bd8a3ad6-de53-447e-88b3-23b5b1ea3bbb"
-                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                    <bpws:targets>
-                        <bpws:target linkName="AssignToLOG_INVOKE"/>
-                    </bpws:targets>
-                    <bpws:sources>
-                        <bpws:source linkName="LOG_INVOKEToEnd"/>
-                    </bpws:sources>
-                    <tibex:inputBindings>
-                        <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.example.com/namespaces/tns/1610583409932&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:param name=&quot;loglevel&quot;/>&lt;xsl:param name=&quot;resultDatas&quot;/>&lt;xsl:template name=&quot;LOG_INVOKE-input&quot; match=&quot;/&quot;>&lt;tns2:JobTotal>&lt;xsl:copy-of select=&quot;$Start/tns2:JobInfo&quot;/>&lt;tns2:TxInfo>&lt;PROC_TM>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/PROC_TM>&lt;PROC_CNT>&lt;xsl:value-of select=&quot;1&quot;/>&lt;/PROC_CNT>&lt;STEP>&lt;xsl:value-of select=&quot;'INVOKE'&quot;/>&lt;/STEP>&lt;DEBUG>&lt;xsl:value-of select=&quot;$loglevel&quot;/>&lt;/DEBUG>&lt;DEBUG_DATA>&lt;xsl:value-of select=&quot;$resultDatas&quot;/>&lt;/DEBUG_DATA>&lt;DATA_CNT>&lt;xsl:value-of select=&quot;1&quot;/>&lt;/DATA_CNT>&lt;/tns2:TxInfo>&lt;/tns2:JobTotal>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                    </tibex:inputBindings>
-                    <tibex:CallProcess
-                        subProcessName="com.fnf.eai.common.log.EAI_LOG" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
-                </tibex:extActivity>
-            </bpws:extensionActivity>
-            <bpws:extensionActivity>
                 <tibex:activityExtension
                     governedObjectTypes="BWHttpReference"
                     inputVariable="InvokeRESTAPI_HERO-input"
@@ -2040,7 +1827,7 @@
                         <bpws:target linkName="GatewayRESTToInvokeRESTAPI_HERO"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="InvokeRESTAPI_HEROToAssign"/>
+                        <bpws:source linkName="InvokeRESTAPI_HEROToEnd"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
@@ -2068,25 +1855,6 @@
                 </tibex:activityExtension>
             </bpws:extensionActivity>
             <bpws:extensionActivity>
-                <tibex:extActivity inputVariable="LOG_END-input"
-                    name="LOG_END"
-                    tibex:xpdlId="15c78ced-1f0c-4b9c-bc81-c842fc32c65a"
-                    type="bw.generalactivities.callprocess" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                    <bpws:targets>
-                        <bpws:target linkName="LOG_INVOKEToEnd"/>
-                    </bpws:targets>
-                    <bpws:sources>
-                        <bpws:source linkName="CallProcessToEnd"/>
-                    </bpws:sources>
-                    <tibex:inputBindings>
-                        <tibex:inputBinding coercion=""
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns2=&quot;http://www.example.com/namespaces/tns/1610583409932&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;loglevel&quot;/>&lt;xsl:param name=&quot;Start&quot;/>&lt;xsl:param name=&quot;resultDatas&quot;/>&lt;xsl:template name=&quot;LOG_END-input&quot; match=&quot;/&quot;>&lt;tns2:JobTotal>&lt;xsl:copy-of select=&quot;$Start/tns2:JobInfo&quot;/>&lt;tns2:TxInfo>&lt;PROC_TM>&lt;xsl:value-of select=&quot;current-dateTime()&quot;/>&lt;/PROC_TM>&lt;PROC_CNT>&lt;xsl:value-of select=&quot;1&quot;/>&lt;/PROC_CNT>&lt;STEP>&lt;xsl:value-of select=&quot;'END'&quot;/>&lt;/STEP>&lt;DEBUG>&lt;xsl:value-of select=&quot;$loglevel&quot;/>&lt;/DEBUG>&lt;DEBUG_DATA>&lt;xsl:value-of select=&quot;$resultDatas&quot;/>&lt;/DEBUG_DATA>&lt;DATA_CNT>&lt;xsl:value-of select=&quot;1&quot;/>&lt;/DATA_CNT>&lt;/tns2:TxInfo>&lt;/tns2:JobTotal>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                    </tibex:inputBindings>
-                    <tibex:CallProcess
-                        subProcessName="com.fnf.eai.common.log.EAI_LOG" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"/>
-                </tibex:extActivity>
-            </bpws:extensionActivity>
-            <bpws:extensionActivity>
                 <tibex:activityExtension
                     governedObjectTypes="BWHttpReference"
                     inputVariable="InvokeRESTAPI_O3PL-input"
@@ -2097,7 +1865,7 @@
                         <bpws:target linkName="GatewayRESTToInvokeRESTAPI_O3PL"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="InvokeRESTAPI_O3PLToLOG_INVOKE"/>
+                        <bpws:source linkName="InvokeRESTAPI_O3PLToEnd"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
@@ -2125,40 +1893,6 @@
                 </tibex:activityExtension>
             </bpws:extensionActivity>
             <bpws:extensionActivity>
-                <tibex:activityExtension inputVariable="resultDatas"
-                    name="ResultSet" outputVariable="resultDatas"
-                    tibex:xpdlId="8faeb886-ea61-4cb1-ab18-e14826b460b3" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                    <bpws:targets>
-                        <bpws:target linkName="InvokeRESTAPI_O3PLToLOG_INVOKE"/>
-                        <bpws:target linkName="InvokeRESTAPI_HEROToAssign"/>
-                        <bpws:target linkName="InvokeRESTAPI_OBOToAssign"/>
-                        <bpws:target linkName="InvokeRESTAPI_SAPToResultSet"/>
-                        <bpws:target linkName="InvokeRESTAPIToResultSet"/>
-                    </bpws:targets>
-                    <bpws:sources>
-                        <bpws:source linkName="AssignToLOG_INVOKE"/>
-                    </bpws:sources>
-                    <tibex:inputBindings>
-                        <tibex:inputBinding
-                            expression="if (upper-case($Start/ns1:JobInfo/TARGET_SYSTEM)='HERO') then $InvokeRESTAPI_HERO/MessageBody/asciiContent else (if (upper-case($Start/ns1:JobInfo/TARGET_SYSTEM)='OBO') then $InvokeRESTAPI_OBO/MessageBody/asciiContent else (if (upper-case($Start/ns1:JobInfo/TARGET_SYSTEM)='O3PL') then $InvokeRESTAPI_O3PL/MessageBody/asciiContent else (if (upper-case($Start/ns1:JobInfo/TARGET_SYSTEM)='SAP') then $InvokeRESTAPI_SAP/MessageBody/asciiContent else (if (upper-case($Start/ns1:JobInfo/TARGET_SYSTEM)='ITER') then $InvokeRESTAPI_ITER/MessageBody/asciiContent else ''))))" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
-                    </tibex:inputBindings>
-                    <tibex:config>
-                        <bwext:BWActivity
-                            activityTypeID="bw.generalactivities.bwassign"
-                            xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
-                            xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
-                            xmlns:generalactivities="http://ns.tibco.com/bw/palette/generalactivities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                            <activityConfig>
-                                <properties name="config" xsi:type="activityconfig:EMFProperty">
-                                    <type href="http://ns.tibco.com/bw/palette/generalactivities#//BWAssign"/>
-                                    <value processVariable="resultDatas" xsi:type="generalactivities:BWAssign"/>
-                                </properties>
-                            </activityConfig>
-                        </bwext:BWActivity>
-                    </tibex:config>
-                </tibex:activityExtension>
-            </bpws:extensionActivity>
-            <bpws:extensionActivity>
                 <tibex:activityExtension
                     governedObjectTypes="BWHttpReference"
                     inputVariable="InvokeRESTAPI_SAP-input"
@@ -2169,7 +1903,7 @@
                         <bpws:target linkName="GatewayRESTToInvokeRESTAPI_SAP"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="InvokeRESTAPI_SAPToResultSet"/>
+                        <bpws:source linkName="InvokeRESTAPI_SAPToEnd"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
@@ -2207,7 +1941,7 @@
                         <bpws:target linkName="GatewayRESTToInvokeRESTAPI_ITER"/>
                     </bpws:targets>
                     <bpws:sources>
-                        <bpws:source linkName="InvokeRESTAPIToResultSet"/>
+                        <bpws:source linkName="InvokeRESTAPI_ITERToEnd"/>
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding

@@ -15,35 +15,6 @@
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
     xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <tibex:VariableDescriptor type="MemorySaving">
-        <task name="End">
-            <endingVariables>
-                <variable>Start</variable>
-            </endingVariables>
-        </task>
-        <task name="Log">
-            <endingVariables>
-                <variable>Log-input</variable>
-            </endingVariables>
-        </task>
-        <task name="JMSSendMessage">
-            <endingVariables>
-                <variable>JMSSendMessage-input</variable>
-                <variable>JMSSendMessage</variable>
-                <variable>ENV</variable>
-            </endingVariables>
-        </task>
-        <task name="ErrLog">
-            <endingVariables>
-                <variable>ErrLog-input</variable>
-            </endingVariables>
-        </task>
-        <task name="TraceLog">
-            <endingVariables>
-                <variable>TraceLog-input</variable>
-            </endingVariables>
-        </task>
-    </tibex:VariableDescriptor>
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
@@ -925,8 +896,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.5"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="275"
-                                    xsi:type="notation:Bounds" y="285"/>
+                                    x="268"
+                                    xsi:type="notation:Bounds" y="187"/>
                                     </children>
                                     <children type="4002 com.tibco.bw.core.design.process.editor.Activity_4002_Empty">
                                     <children type="4017">
@@ -958,8 +929,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.6"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="275"
-                                    xsi:type="notation:Bounds" y="381"/>
+                                    x="268"
+                                    xsi:type="notation:Bounds" y="268"/>
                                     </children>
                                     <children type="4002 bw.generalactivities.log">
                                     <children type="4017">
@@ -1045,17 +1016,6 @@
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
         <edges
-            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1" type="4006">
-            <children type="6002">
-                <layoutConstraint x="39" xsi:type="notation:Location" y="-12"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.0"/>
-            <bendpoints points="[25, 6, -61, -15]$[62, 15, -24, -6]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4"
             target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
             <children type="6002">
@@ -1063,7 +1023,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.1"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.0"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -1074,7 +1034,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.2"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.1"/>
             <bendpoints points="[25, 6, -87, 0]$[88, 0, -24, -6]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -1085,7 +1045,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.3"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.2"/>
             <bendpoints
                 points="[21, 25, -169, -200]$[169, 201, -21, -24]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
@@ -1097,7 +1057,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.4"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.3"/>
             <bendpoints points="[25, 0, -108, 0]$[109, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -1108,7 +1068,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.5"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.4"/>
             <bendpoints points="[25, -14, -121, 67]$[122, -67, -24, 14]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
@@ -1119,7 +1079,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.5"/>
             <bendpoints
                 points="[23, 25, -172, -179]$[172, 180, -23, -24]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
@@ -1131,7 +1091,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.6"/>
             <bendpoints
                 points="[21, -24, -157, 180]$[157, -179, -21, 25]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
@@ -1143,7 +1103,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.8"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.7"/>
             <bendpoints
                 points="[25, -21, -169, 142]$[170, -142, -24, 21]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
@@ -1155,7 +1115,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.9"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.8"/>
             <bendpoints
                 points="[25, 22, -154, -141]$[155, 141, -24, -22]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
@@ -1167,7 +1127,7 @@
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@links/@children.10"/>
+            <element href="//0/@process/@activity/@activity/@links/@children.9"/>
             <bendpoints points="[25, 0, -65, 0]$[66, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
@@ -1229,7 +1189,6 @@
     <bpws:scope name="scope">
         <bpws:flow name="flow">
             <bpws:links>
-                <bpws:link name="EmptyToEnd" tibex:label="DEBUG" tibex:linkType="SUCCESSWITHCONDITION"/>
                 <bpws:link name="JMSSendMessageToEmpty" tibex:linkType="SUCCESS"/>
                 <bpws:link name="EmptyToInfoLog" tibex:label="INFO" tibex:linkType="SUCCESSWITHCONDITION"/>
                 <bpws:link name="EmptyToErrLog_ERROR"
@@ -1265,7 +1224,6 @@
                         <bpws:target linkName="ErrLogToEnd"/>
                         <bpws:target linkName="NoDatasToEnd"/>
                         <bpws:target linkName="TraceLogToEnd"/>
-                        <bpws:target linkName="EmptyToEnd"/>
                     </bpws:targets>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1321,13 +1279,6 @@
                     <bpws:target linkName="JMSSendMessageToEmpty"/>
                 </bpws:targets>
                 <bpws:sources>
-                    <bpws:source linkName="EmptyToEnd">
-                        <tibex:DesignExpression>
-                            <tibex:expression
-                                expression="$Start/ns0:TxInfo/DEBUG='DEBUG'" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"/>
-                        </tibex:DesignExpression>
-                        <bpws:transitionCondition expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"><![CDATA[$Start/ns0:TxInfo/DEBUG='DEBUG']]></bpws:transitionCondition>
-                    </bpws:source>
                     <bpws:source linkName="EmptyToInfoLog">
                         <tibex:DesignExpression>
                             <tibex:expression
