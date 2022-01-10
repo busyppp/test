@@ -937,7 +937,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.9"/>
-                                    <layoutConstraint x="1196"
+                                    <layoutConstraint x="1205"
                                     xsi:type="notation:Bounds" y="107"/>
                                     </children>
                                     <children type="4002 bw.generalactivities.callprocess">

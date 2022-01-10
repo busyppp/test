@@ -1256,7 +1256,7 @@
 
                                     <layoutConstraint
                                     height="232"
-                                    width="428"
+                                    width="417"
                                     x="15"
                                     xsi:type="notation:Bounds" y="20"/>
                                     </children>
@@ -1360,7 +1360,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.8/@activities.2"/>
                                     <layoutConstraint
                                     height="276"
-                                    width="468"
+                                    width="457"
                                     x="34"
                                     xsi:type="notation:Bounds" y="42"/>
                                     </children>
