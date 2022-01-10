@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_JwXFMO9vEeulQ6CRjm4ofA" targetNamespace="http://tns.tibco.com/bw/composite/EAI_Template" name="EAI_Template" compositeext:version="1.0.0" compositeext:formatVersion="2">
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="_JwXFMO9vEeulQ6CRjm4ofA" targetNamespace="http://tns.tibco.com/bw/composite/EAI_Template" name="EAI_Template" compositeext:version="1.0.0" compositeext:formatVersion="2">
   <sca:property xmi:id="_J5fzEO9vEeulQ6CRjm4ofA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_J6Fo8O9vEeulQ6CRjm4ofA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_J6wXUO9vEeulQ6CRjm4ofA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
@@ -64,16 +64,4 @@
   <sca:property xmi:id="_D-yv0PZtEeu3KfTx1us18g" name="/ITER_INFO/HTTP/port" type="XMLSchema:int" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_D_moIPZtEeu3KfTx1us18g" name="/ITER_INFO/HTTP/authorization" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_EAMeAPZtEeu3KfTx1us18g" name="/ITER_INFO/HTTP/password" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:component xmi:id="__lm2gO9wEeulQ6CRjm4ofA" name="ComponentDBtoRest_Type1" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__lm2ge9wEeulQ6CRjm4ofA" processName="com.fnf.eai.db.to.any.DBtoDB_Type1"/>
-  </sca:component>
-  <sca:component xmi:id="_AFR1EO9xEeulQ6CRjm4ofA" name="ComponentDBtoRest_Type2" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_AFR1Ee9xEeulQ6CRjm4ofA" processName="com.fnf.eai.db.to.any.DBtoRest_Type2"/>
-  </sca:component>
-  <sca:component xmi:id="_wDW0IO9xEeulQ6CRjm4ofA" name="ComponentDBtoRest_Type3" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_wDW0Ie9xEeulQ6CRjm4ofA" processName="com.fnf.eai.db.to.any.DBtoRest_Type1"/>
-  </sca:component>
-  <sca:component xmi:id="_II-jAPsoEeu67qyPwoVlyA" name="ComponentDBtoEMS_Type1" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_II-jAfsoEeu67qyPwoVlyA" processName="com.fnf.eai.db.to.any.DBtoEMS_Type1"/>
-  </sca:component>
 </sca:composite>
